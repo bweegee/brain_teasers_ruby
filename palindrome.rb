@@ -2,7 +2,7 @@
 
 def palindrome
   puts "Give me a word"
-  string = gets.strip
+  string = gets.gsub(/\s+/, "")
   string_array = string.scan (/\w/)
   last = string.length - 1
   first = 0
