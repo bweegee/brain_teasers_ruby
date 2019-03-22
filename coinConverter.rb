@@ -6,7 +6,7 @@
 def coinConverter(num, coins)
   coinArray = []
 
-  coins.each do |coin, index|
+  coins.each do |coin|
     while (num - coin >= 0)
       coinArray.push(coin)
       num -= coin
@@ -18,4 +18,4 @@ def coinConverter(num, coins)
   end
 end
 
-coinConverter(46,[25, 10, 5, 1])
+coinConverter(47,[25, 10, 5, 1])

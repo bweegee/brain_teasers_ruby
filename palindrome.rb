@@ -2,12 +2,12 @@
 
 def palindrome
   puts "Give me a word"
-  string = gets.gsub(/\s+/, "")
-  string_array = string.scan (/\w/)
+  string = gets.gsub(/\s+/, "")     # strip whitespace
+  string_array = string.scan (/\w/) # turn string into an array
   last = string.length - 1
   first = 0
   palindrome = true
-  
+
   string_array.each do |letter|
     while last > first
         if string_array[first] != string_array[last]
